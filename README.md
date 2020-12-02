@@ -1,4 +1,4 @@
-# A2019-Wheather-Bot
+# A2019-Weather-Bot
 
 Chat bot : 
 ===================
