@@ -1,0 +1,37 @@
+version: "2.0"
+
+intents:
+  - greet
+  - userinput
+  - usercity
+  - goodbye
+
+entities:
+  - city
+
+actions:
+    - utter_greet
+    - utter_askcity
+    - utter_showscity
+    - utter_goodbye
+slots:
+  city:
+    type: any
+  user_msg:
+    type: text
+
+responses:
+  utter_greet:
+   - text: "Hey! How are you? How can i help you"
+  utter_askcity:
+   - text: "What is your city name...?"
+
+  utter_showscity:
+   - text: "Your city is {city}"
+
+  utter_goodbye:
+   - text: "Bye"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
