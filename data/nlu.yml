@@ -4,9 +4,9 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello
+    - Hello
     - hi
-    - hello there
+    - hello
     - good morning
     - good evening
     - moin
@@ -19,13 +19,17 @@ nlu:
 
 - intent: userinput
   examples: |
-    - what is the wheather today
-    - show me the wheather
+    - what is the weather today
+    - show me the weather
 
-- intent: usercity
+- intent: adhaarid
   examples: |
-    - [city](city)
-    - my city is [city](city)
+    - delhi
+   
+  #`: - my city is
+#- intent: messagebox
+#  examples: |
+#    - Show me the message
 
 - intent: goodbye
   examples: |
@@ -40,4 +44,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
+
+
 
