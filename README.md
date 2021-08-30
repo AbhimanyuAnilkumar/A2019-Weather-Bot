@@ -13,4 +13,6 @@ i.  RASA NLU: RASA NLU (Natural Language Understanding) is an open-source natura
 
 ii. RASA Core: RASA Core is a dialogue engine for building AI assistants. It’s part of the open source RASA framework. Rather than a bunch of if/else statements, 
     it uses a machine learning model trained on example conversations (the structured input from the NLU)to decide what to do next (next best action using a probabilistic
-    model like LSTM neural network).   
+    model like LSTM neural network).  
+    
+=============================================================================
