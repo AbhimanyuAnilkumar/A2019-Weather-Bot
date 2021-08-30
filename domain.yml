@@ -3,34 +3,46 @@ version: "2.0"
 intents:
   - greet
   - userinput
-  - usercity
+  - adhaarid
   - goodbye
 
 entities:
-  - city
+  - cityname
+    #  - adhaarno
 
 actions:
+        #    - action_aaemsg
     - utter_greet
-    - utter_askcity
-    - utter_showscity
-    - utter_goodbye
+    - utter_askadhaarno
+    - utter_showadhaar
+    - action_aaemsg
+    - utter_goodbyei
+
 slots:
-  city:
+        #  user_msg:
+          # type: text
+
+        #  cityname:
+        #    type: any
+    #influence_conversation: false
+  adhaarno:
     type: any
-  user_msg:
-    type: text
+    
+
 
 responses:
   utter_greet:
    - text: "Hey! How are you? How can i help you"
-  utter_askcity:
-   - text: "What is your city name...?"
+  utter_askadhaarno:
+   - text: "Please Enter your city name...?"
 
-  utter_showscity:
-   - text: "Your city is {city}"
+  utter_showadhaar:
+   - text: "{adhaarno}"
 
   utter_goodbye:
    - text: "Bye"
+
+
 
 session_config:
   session_expiration_time: 60
